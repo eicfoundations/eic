@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Freeze: ON — Site is in Draft/Observed Mode and content is frozen; changes require explicit authorization.
+
 ## Getting Started
 
 First, run the development server:
