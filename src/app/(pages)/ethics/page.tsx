@@ -20,7 +20,7 @@ export default function EthicsPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-base font-semibold text-stone-900">
-                1. Free Will Is Supreme
+                1. Voluntary Participation Is Supreme
               </h3>
               <ul className="mt-2 list-disc space-y-2 pl-5">
                 <li>Participation in EIC is voluntary at all times.</li>

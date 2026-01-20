@@ -22,9 +22,9 @@ promotional. POI and Store remain inactive and labeled as such. Certain
 operational details may be disclosed later for security-first reasons.
 
 ## Mission & Principles
-EIC centers human agency and voluntary engagement. Free will is paramount, and
-non-manipulation is required. Security-first posture and neutral language guide
-all public-facing material.
+EIC centers human agency and voluntary engagement. Voluntary participation is
+paramount, and non-manipulation is required. Security-first posture and neutral
+language guide all public-facing material.
 
 ## System Overview
 High-level components include:
