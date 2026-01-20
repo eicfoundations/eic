@@ -171,7 +171,7 @@ export default function EthicsPage() {
               <ul className="mt-2 list-disc space-y-2 pl-10">
                 <li>All public EIC websites and interfaces</li>
                 <li>All AI-assisted interactions</li>
-                <li>All future modules, including POI and Store</li>
+                <li>All future modules, including Store</li>
               </ul>
               <p className="mt-2">
                 If a feature conflicts with this checklist, the feature does

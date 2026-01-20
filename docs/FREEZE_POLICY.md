@@ -10,7 +10,7 @@ Allowed while frozen:
 - Link updates to authoritative sources (GitHub/BaseScan) once verified.
 
 Not allowed while frozen:
-- POI mechanics, puzzles, rewards, mining/claims logic.
+- Mechanics, puzzles, rewards, mining/claims logic.
 - WalletConnect, connect buttons, token purchase prompts.
 - Timelines, launch dates, ROI language, or "get in early" messaging.
 - Any persuasion or urgency framing.

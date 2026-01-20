@@ -11,8 +11,9 @@ activating mechanics or incentives.
   intent and documentation.
 - Observed Mode: The current state where information is view-only and inactive
   modules are clearly labeled.
-- POI: Proof of Impact, a conceptual validation idea with no published
-  mechanics.
+- POI: Proof of Insight, a conceptual validation of understanding. POI is not
+  active, provides no rewards, and confers no access or status in Draft /
+  Observed Mode.
 - Steward/Captain: A coordinating role that maintains neutral posture and
   accountability.
 
@@ -31,7 +32,7 @@ High-level components include:
 - Public website and documentation
 - Community coordination (conceptual)
 - Token layer (conceptual, inactive)
-- Validation layer (POI: conceptual only)
+- Validation layer (POI: conceptual and inactive)
 
 ## Safety & Ethics (Binding)
 The Safety & Ethics Checklist at `/ethics` is binding for all EIC systems and
@@ -48,9 +49,10 @@ Roles are descriptive and voluntary: Observer, Participant, Builder/Contributor,
 and Steward/Captain (if adopted). Participants can disengage at any time without
 penalty. No onboarding flows are active in Draft / Observed Mode.
 
-## POI Concept (No Mechanics Yet)
-Proof of Impact (POI) is a conceptual idea for validating insight and
-human/AI mutual learning. No rules, rewards, or algorithms are published yet.
+## POI Concept (Conceptual and Inactive)
+Proof of Insight (POI) is a conceptual validation of understanding. POI is not
+active, provides no rewards, and confers no access or status in Draft / Observed
+Mode.
 
 ## Transparency
 Authoritative sources include official GitHub and BaseScan references once

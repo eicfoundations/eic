@@ -10,10 +10,12 @@ binding while Freeze is ON and must align with `/ethics` and `docs/FREEZE_POLICY
 - Security review completed for any new public surfaces.
 - Explicit authorization recorded for UI changes.
 
-## Before POI (Concept to Activation)
-- POI remains conceptual until a standalone risk review is complete.
+## Before POI (Proof of Insight, Conceptual and Inactive) Activation
+- POI (Proof of Insight) remains conceptual and inactive until a standalone risk
+  review is complete.
 - No rewards, claims, or mechanics are published without approval.
-- Threat model updated with POI-specific risks and mitigations.
+- Threat model updated with conceptual, inactive POI-specific risks and
+  mitigations.
 - Independent review sign-off documented.
 
 ## Before Store Activation

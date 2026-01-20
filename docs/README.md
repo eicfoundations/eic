@@ -13,8 +13,8 @@ only and remains in Draft/Observed Mode.
   public statements.
 - [Roles & Responsibilities](./ROLES_AND_RESPONSIBILITIES.md): Voluntary roles,
   permissions, and offboarding.
-- [Release Gates](./RELEASE_GATES.md): Preconditions for unfreezing UI, POI, and
-  Store activation.
+- [Release Gates](./RELEASE_GATES.md): Preconditions for unfreezing UI and Store
+  activation.
 
 ## Verification
 - [Official Links](./OFFICIAL_LINKS.md): Single source of truth for official

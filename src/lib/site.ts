@@ -30,7 +30,6 @@ export const primaryNav: NavItem[] = [
   { label: "Investors", href: "/investors" },
   { label: "Transparency", href: "/transparency" },
   { label: "Docs", href: "/docs" },
-  { label: "POI", href: "/poi" },
   { label: "Store", href: "/store" },
 ];
 
