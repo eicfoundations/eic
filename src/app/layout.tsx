@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Space_Grotesk } from "next/font/google";
+import { Orbitron, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -10,8 +10,8 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${fraunces.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${orbitron.variable} antialiased`}
       >
         <div className="page-shell">
           <SiteNotice />
