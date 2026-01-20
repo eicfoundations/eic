@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Card from "../../../components/Card";
 import Container from "../../../components/Container";
 import SectionHeader from "../../../components/SectionHeader";
@@ -11,6 +12,11 @@ export default function TransparencyPage() {
           title="Traceable updates with neutral language."
           description="Transparency in Observed Mode focuses on documented decisions, versioned logs, and clear change ownership."
         />
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-stone-600">
+          <Link className="transition hover:text-stone-900" href="/ethics">
+            Safety &amp; Ethics Checklist
+          </Link>
+        </p>
         <div className="grid gap-6 md:grid-cols-2">
           {[
             {

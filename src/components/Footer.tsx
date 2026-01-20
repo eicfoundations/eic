@@ -23,6 +23,12 @@ export default function Footer() {
               {item.label}
             </Link>
           ))}
+          <Link
+            className="text-stone-600 transition hover:text-stone-900"
+            href="/ethics"
+          >
+            Safety &amp; Ethics
+          </Link>
         </div>
       </Container>
     </footer>
