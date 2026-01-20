@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #1f1a12;
+  --muted: #5f574c;
+  --canvas: #f6f1e8;
+  --highlight: #f8ead1;
+  --accent: #b37725;
+  --shadow: rgba(31, 24, 16, 0.15);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--canvas);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-space-grotesk);
+  --font-display: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--canvas);
+  background-image: radial-gradient(
+      circle at 15% 15%,
+      rgba(255, 255, 255, 0.8),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(248, 234, 209, 0.7),
+      transparent 55%
+    ),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.5), transparent 45%);
+  color: var(--ink);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), "Times New Roman", serif;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.rise {
+  animation: rise 0.75s ease both;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
