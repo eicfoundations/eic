@@ -1,45 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #e6efff;
-  --muted: #a7b7d9;
-  --canvas: #0a0f1f;
-  --panel: rgba(14, 20, 38, 0.88);
-  --highlight: rgba(111, 231, 255, 0.14);
-  --accent: #6fe7ff;
-  --accent-warm: #d6b36a;
-  --shadow: rgba(3, 6, 16, 0.7);
+  --ink: #f7faff;
+  --muted: #cbd8ef;
+  --canvas: #0b121e;
+  --panel: rgba(16, 24, 40, 0.94);
+  --highlight: rgba(105, 225, 235, 0.12);
+  --accent: #68e1eb;
+  --accent-warm: #d3b068;
+  --shadow: rgba(2, 6, 14, 0.75);
 }
 
 @theme inline {
   --color-background: var(--canvas);
   --color-foreground: var(--ink);
   --font-sans: var(--font-space-grotesk);
-  --font-display: var(--font-orbitron);
+  --font-display: var(--font-sora);
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 17px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   background-color: var(--canvas);
   background-image: radial-gradient(
-      circle at 10% 20%,
-      rgba(47, 94, 164, 0.45),
+      circle at 12% 18%,
+      rgba(40, 96, 150, 0.45),
       transparent 55%
     ),
     radial-gradient(
-      circle at 80% 12%,
-      rgba(62, 179, 202, 0.35),
-      transparent 45%
+      circle at 78% 16%,
+      rgba(70, 200, 210, 0.35),
+      transparent 42%
     ),
     radial-gradient(
-      circle at 50% 70%,
-      rgba(25, 40, 90, 0.6),
+      circle at 50% 80%,
+      rgba(18, 35, 70, 0.7),
       transparent 60%
     ),
-    linear-gradient(165deg, rgba(7, 11, 24, 0.96), rgba(4, 7, 18, 0.98));
+    linear-gradient(165deg, rgba(7, 12, 25, 0.96), rgba(4, 8, 18, 0.98));
   color: var(--ink);
   font-family: var(--font-space-grotesk), system-ui, sans-serif;
   position: relative;
@@ -51,16 +61,36 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image: linear-gradient(
-      rgba(111, 231, 255, 0.08) 1px,
+      rgba(104, 225, 235, 0.08) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(111, 231, 255, 0.08) 1px,
+      rgba(104, 225, 235, 0.08) 1px,
       transparent 1px
     );
-  background-size: 64px 64px;
-  opacity: 0.28;
+  background-size: 72px 72px;
+  opacity: 0.24;
+  z-index: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+      circle at 55% 70%,
+      rgba(104, 225, 235, 0.2),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 60% 85%,
+      rgba(104, 225, 235, 0.12),
+      transparent 60%
+    );
+  mix-blend-mode: screen;
+  opacity: 0.3;
   z-index: 0;
 }
 
@@ -70,9 +100,8 @@ a {
 }
 
 .font-display {
-  font-family: var(--font-orbitron), system-ui, sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  letter-spacing: 0.02em;
 }
 
 .page-shell {
@@ -84,9 +113,14 @@ a {
 }
 
 main {
-  background: var(--panel);
+  background: linear-gradient(
+      180deg,
+      rgba(22, 34, 60, 0.98),
+      rgba(12, 20, 36, 0.98)
+    ),
+    var(--panel);
   box-shadow: 0 30px 120px var(--shadow);
-  border: 1px solid rgba(111, 231, 255, 0.12);
+  border: 1px solid rgba(104, 225, 235, 0.18);
 }
 
 @media (min-width: 768px) {
@@ -98,16 +132,33 @@ main {
 
 header,
 footer {
-  background: rgba(12, 18, 36, 0.78);
+  background: rgba(9, 15, 30, 0.88);
   color: var(--ink);
 }
 
 header {
-  border-bottom-color: rgba(111, 231, 255, 0.18);
+  border-bottom-color: rgba(104, 225, 235, 0.2);
 }
 
 footer {
-  border-top-color: rgba(111, 231, 255, 0.18);
+  border-top-color: rgba(104, 225, 235, 0.2);
+}
+
+.text-stone-900,
+.text-stone-800 {
+  color: var(--ink) !important;
+}
+
+.text-stone-700 {
+  color: var(--muted) !important;
+}
+
+.text-stone-600 {
+  color: #b7c6df !important;
+}
+
+.text-stone-500 {
+  color: #9fb0c9 !important;
 }
 
 .rise {
