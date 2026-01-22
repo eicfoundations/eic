@@ -36,23 +36,24 @@ body {
   background-color: var(--canvas);
   background-image: radial-gradient(
       circle at 12% 18%,
-      rgba(40, 96, 150, 0.45),
-      transparent 55%
+      rgba(40, 96, 150, 0.35),
+      transparent 58%
     ),
     radial-gradient(
       circle at 78% 16%,
-      rgba(70, 200, 210, 0.35),
-      transparent 42%
+      rgba(70, 200, 210, 0.28),
+      transparent 46%
     ),
     radial-gradient(
       circle at 50% 80%,
-      rgba(18, 35, 70, 0.7),
-      transparent 60%
+      rgba(18, 35, 70, 0.6),
+      transparent 62%
     ),
-    linear-gradient(165deg, rgba(7, 12, 25, 0.96), rgba(4, 8, 18, 0.98));
+    linear-gradient(165deg, rgba(7, 12, 25, 0.97), rgba(4, 8, 18, 0.99));
   color: var(--ink);
   font-family: var(--font-space-grotesk), system-ui, sans-serif;
   position: relative;
+  line-height: 1.7;
 }
 
 body::before {
@@ -69,8 +70,8 @@ body::before {
       rgba(104, 225, 235, 0.08) 1px,
       transparent 1px
     );
-  background-size: 72px 72px;
-  opacity: 0.24;
+  background-size: 80px 80px;
+  opacity: 0.18;
   z-index: 0;
 }
 
@@ -81,13 +82,13 @@ body::after {
   pointer-events: none;
   background-image: radial-gradient(
       circle at 55% 70%,
-      rgba(104, 225, 235, 0.2),
-      transparent 55%
+      rgba(104, 225, 235, 0.14),
+      transparent 58%
     ),
     radial-gradient(
       circle at 60% 85%,
-      rgba(104, 225, 235, 0.12),
-      transparent 60%
+      rgba(104, 225, 235, 0.08),
+      transparent 62%
     );
   mix-blend-mode: screen;
   opacity: 0.3;
@@ -120,12 +121,12 @@ main {
     ),
     var(--panel);
   box-shadow: 0 30px 120px var(--shadow);
-  border: 1px solid rgba(104, 225, 235, 0.18);
+  border: 1px solid rgba(104, 225, 235, 0.14);
 }
 
 @media (min-width: 768px) {
   main {
-    margin: 20px 20px 32px;
+    margin: 24px 24px 36px;
     border-radius: 28px;
   }
 }
@@ -134,6 +135,20 @@ header,
 footer {
   background: rgba(9, 15, 30, 0.88);
   color: var(--ink);
+}
+
+.max-w-2xl,
+.max-w-3xl {
+  max-width: 52ch;
+}
+
+.text-base,
+.text-sm {
+  line-height: 1.75;
+}
+
+.text-lg {
+  line-height: 1.7;
 }
 
 header {
