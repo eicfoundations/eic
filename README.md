@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Energy Intelligence Coin (EIC)
 
-Freeze: ON — Site is in Draft/Observed Mode and content is frozen; changes require explicit authorization.
+**Energy Intelligence Coin (EIC)** is a live digital asset on Base mainnet, currently in its **market discovery phase**.
 
-## Getting Started
+EIC is intentionally launched **without fixed narratives, promises, or forced utility**. The project prioritizes transparency, stability, and organic participation while the market determines direction and value.
 
-First, run the development server:
+There are **no guarantees, no profit claims, and no exaggerated roadmaps**. EIC exists openly on-chain, with its supply and contract logic already deployed and immutable.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Any future development, utility, or ecosystem expansion—when pursued—will be approached **incrementally and publicly**, based on real market traction and sustainability rather than speculation or hype.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**EIC focuses on execution over storytelling, and clarity over commitment.**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## What EIC Is
+- A live, verifiable crypto asset on Base
+- In early-stage market discovery
+- Transparent about its current scope and status
+- Open to future evolution without locking into premature claims
 
-## Learn More
+## What EIC Is Not
+- Not a promise of profit or returns
+- Not a charity or redistribution token
+- Not a finished ecosystem
+- Not driven by ideology, belief systems, or hidden mechanisms
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Current Phase
+**Market Discovery & Liquidity Formation**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+EIC is currently allowing the market to establish pricing, distribution, and interest organically. Development follows traction—not the other way around.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Launch Philosophy
+Many projects fail by over-defining the future too early.  
+EIC takes the opposite approach: **establish stability first, expand only when justified**.
