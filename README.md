@@ -6,7 +6,7 @@ EIC is intentionally launched **without fixed narratives, promises, or forced ut
 
 There are **no guarantees, no profit claims, and no exaggerated roadmaps**. EIC exists openly on-chain, with its supply and contract logic already deployed and immutable.
 
-Any future development, utility, or ecosystem expansionâ€”when pursuedâ€”will be approached **incrementally and publicly**, based on real market traction and sustainability rather than speculation or hype.
+Any future development, utility, or ecosystem expansion—if pursued—will be approached **incrementally and publicly**, based on real market traction and sustainability rather than speculation or hype.
 
 **EIC focuses on execution over storytelling, and clarity over commitment.**
 
@@ -29,7 +29,7 @@ Any future development, utility, or ecosystem expansionâ€”when pursuedâ€”will be
 ## Current Phase
 **Market Discovery & Liquidity Formation**
 
-EIC is currently allowing the market to establish pricing, distribution, and interest organically. Development follows tractionâ€”not the other way around.
+EIC is currently allowing the market to establish pricing, distribution, and interest organically. Development follows traction—not the other way around.
 
 ---
 
