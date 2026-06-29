@@ -1,7 +1,12 @@
 # Documentation Index (Draft)
 
-This index lists the current draft documentation for EIC. Content is descriptive
-only and remains in Draft/Observed Mode.
+This index lists the current draft documentation for EIC. Content is
+descriptive only and remains in Draft/Observed Mode.
+
+The token identity is **Energy Intelligence Coin (EIC)**. The maintaining
+organization is **Energy Intelligence Coin Emergent Technologies**. Public
+community, documentation, governance, and stewardship materials are presented
+under **EIC Foundations**.
 
 ## Core
 - [EIC Paper (Draft)](./EIC_PAPER_DRAFT.md): Conceptual overview and scope.

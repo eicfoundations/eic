@@ -1,5 +1,20 @@
-## EIC Emergent Technology
+## Energy Intelligence Coin Identity Hierarchy
 
-EIC Emergent Technology is the organizational and research umbrella exploring present and future technological directions around the EIC asset.
+### 1. Digital Asset
+**Energy Intelligence Coin (EIC)**
 
-The organization operates with a market-first posture, prioritizing transparency, adaptability, and long-term optionality.
+The token and Base Mainnet asset identity remain **Energy Intelligence Coin (EIC)**.
+
+### 2. Organization
+**Energy Intelligence Coin Emergent Technologies**
+
+Energy Intelligence Coin Emergent Technologies is the maintaining organization
+for the asset framework, research direction, and long-term technical posture
+surrounding EIC.
+
+### 3. Community / Stewardship Arm
+**EIC Foundations**
+
+EIC Foundations is the public-facing community, documentation, governance, and
+stewardship identity used for the repository, official documentation, and
+Observed Mode communications.
