@@ -15,12 +15,13 @@ export type SiteCopy = {
 export const siteCopy: SiteCopy = {
   name: "EIC",
   modeLabel: "Draft / Observed Mode",
-  tagline: "A neutral, observed scaffold for the EIC ecosystem.",
+  tagline:
+    "Energy Intelligence Coin (EIC) is a live Base Mainnet asset documented through an Observed Mode, documentation-first public site.",
   summary:
-    "This draft site captures the current working model, governance intent, and participation routes without activation flows or token mechanics.",
+    "Energy Intelligence Coin (EIC) is maintained by Energy Intelligence Coin Emergent Technologies, with public documentation, governance context, and stewardship materials presented under EIC Foundations.",
   notice:
-    "Observed Mode means information is view-only and subject to change as documentation stabilizes.",
-  securityNote: "Never share seed phrases; verify official links.",
+    "Observed Mode means public information is descriptive, view-only, and updated conservatively as documentation stabilizes.",
+  securityNote: "Never share seed phrases; verify official links and the canonical contract.",
 };
 
 export const primaryNav: NavItem[] = [

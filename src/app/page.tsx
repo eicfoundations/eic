@@ -1,152 +1,166 @@
-import type { CSSProperties } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import Badge from "../components/Badge";
 import Card from "../components/Card";
 import Container from "../components/Container";
-import CTA from "../components/CTA";
 import SectionHeader from "../components/SectionHeader";
-import { siteCopy } from "../lib/site";
+
+const contractAddress = "0x867776d88DfD7061324FD97C8e03fb2DcC29a024";
+const baseScanUrl = `https://basescan.org/token/${contractAddress}`;
+const githubUrl = "https://github.com/eicfoundations/eic";
 
 export default function Home() {
   return (
-    <div className="pb-20">
-      <section className="relative overflow-hidden py-16">
-        <Container className="space-y-10">
+    <div className="py-16 sm:py-20">
+      <Container className="space-y-10">
+        <section className="rise grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div className="space-y-6">
-            <Badge label={siteCopy.modeLabel} className="rise" />
-            <div className="space-y-5">
-              <h1
-                className="rise font-display text-4xl font-semibold text-stone-950 sm:text-5xl lg:text-6xl"
-                style={{ "--delay": "80ms" } as CSSProperties}
-              >
-                EIC Observed Mode draft scaffold.
-              </h1>
-              <p
-                className="rise max-w-2xl text-base leading-7 text-stone-700 sm:text-lg"
-                style={{ "--delay": "140ms" } as CSSProperties}
-              >
-                {siteCopy.summary}
-              </p>
+            <div className="inline-flex items-center rounded-full border border-cyan-200/20 bg-cyan-100/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100/85">
+              Live on Base Mainnet
             </div>
-            <div
-              className="rise flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.2em]"
-              style={{ "--delay": "200ms" } as CSSProperties}
-            >
+            <SectionHeader
+              eyebrow="Energy Intelligence Coin (EIC)"
+              title="Public documentation for a live Base Mainnet asset."
+              description="Energy Intelligence Coin (EIC) is the live Base Mainnet token. Energy Intelligence Coin Emergent Technologies maintains the asset framework, while EIC Foundations serves as the public documentation, governance, and stewardship identity in Observed Mode."
+            />
+            <div className="flex flex-wrap gap-3 text-sm font-semibold uppercase tracking-[0.18em]">
               <Link
-                className="rounded-full bg-stone-900 px-6 py-3 text-amber-50 transition hover:bg-stone-800"
+                className="rounded-full bg-cyan-100 px-6 py-3 text-slate-950 transition hover:bg-white"
                 href="/docs"
               >
-                Draft Protocol Index
+                Read Docs
               </Link>
               <Link
-                className="rounded-full border border-stone-300 px-6 py-3 text-stone-800 transition hover:border-stone-500"
+                className="rounded-full border border-cyan-200/20 px-6 py-3 text-cyan-50 transition hover:border-cyan-100/40 hover:bg-white/5"
                 href="/transparency"
               >
-                Snapshot Overview
+                Transparency
               </Link>
             </div>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              {
-                title: "Clarity over activation",
-                body: "This is a reference layer for how the EIC might operate once defined, without enabling onboarding or claims.",
-              },
-              {
-                title: "Neutral governance framing",
-                body: "Language focuses on intent and responsibilities rather than predictions or timelines.",
-              },
-              {
-                title: "Visibility for stakeholders",
-                body: "Participants and investors can review expectations and transparency standards in one place.",
-              },
-            ].map((card) => (
-              <Card key={card.title} className="rise space-y-3">
-                <h3 className="text-lg font-semibold text-stone-900">
-                  {card.title}
-                </h3>
-                <p className="text-sm leading-6 text-stone-700">{card.body}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </section>
 
-      <section className="py-16">
-        <Container className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
-          <SectionHeader
-            eyebrow="Observed Mode"
-            title="What is active in this draft?"
-            description="Observed Mode is a snapshot: decisions, documentation, and posture are visible, while activation flows remain off."
-          />
-          <div className="grid gap-4">
-            {[
-              "Documented roles and participation lanes.",
-              "Transparency commitments and reporting cadence guidance.",
-              "Draft governance mechanics subject to review.",
-              "No wallet connect, claims, or asset actions enabled.",
-            ].map((item, index) => (
-              <Card
-                key={item}
-                className="rise"
-                style={{ "--delay": `${index * 80}ms` } as CSSProperties}
+          <Card className="space-y-6">
+            <div className="space-y-4">
+              <Image
+                src="/eic-logo.svg"
+                alt="EIC logo"
+                width={96}
+                height={96}
+                priority
+                className="h-24 w-24 rounded-2xl"
+              />
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-stone-500">
+                  Token status
+                </p>
+                <h2 className="mt-2 font-display text-2xl font-semibold text-stone-900">
+                  Market Discovery
+                </h2>
+              </div>
+            </div>
+            <dl className="grid gap-4 text-sm text-stone-700">
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Digital asset
+                </dt>
+                <dd className="mt-1 text-base text-stone-900">
+                  Energy Intelligence Coin (EIC)
+                </dd>
+              </div>
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Organization
+                </dt>
+                <dd className="mt-1 text-base text-stone-900">
+                  Energy Intelligence Coin Emergent Technologies
+                </dd>
+              </div>
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Stewardship arm
+                </dt>
+                <dd className="mt-1 text-base text-stone-900">
+                  EIC Foundations
+                </dd>
+              </div>
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Network
+                </dt>
+                <dd className="mt-1 text-base text-stone-900">Base Mainnet</dd>
+              </div>
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Canonical contract
+                </dt>
+                <dd className="mt-1 break-all text-base text-stone-900">
+                  {contractAddress}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+                  Public posture
+                </dt>
+                <dd className="mt-1 text-base text-stone-900">
+                  Observed Mode remains active.
+                </dd>
+              </div>
+            </dl>
+            <div className="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-stone-600">
+              <a
+                className="transition hover:text-stone-900"
+                href={baseScanUrl}
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <p className="text-sm text-stone-700">{item}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </section>
+                View on BaseScan
+              </a>
+              <a
+                className="transition hover:text-stone-900"
+                href={githubUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Source Repository
+              </a>
+            </div>
+          </Card>
+        </section>
 
-      <section className="py-16">
-        <Container className="space-y-10">
-          <SectionHeader
-            eyebrow="Structure"
-            title="How the scaffold is organized"
-            description="Each section maps to a discrete knowledge area, with neutral language and no forward-looking timelines."
-          />
-          <div className="grid gap-6 md:grid-cols-2">
-            {[
-              {
-                title: "Mission & principles",
-                body: "Why the EIC exists, and the guiding values that shape its governance choices.",
-              },
-              {
-                title: "Participation lanes",
-                body: "Expectations and responsibilities for contributors, builders, and aligned partners.",
-              },
-              {
-                title: "Investor overview",
-                body: "Risk posture, reporting scope, and the constraints of Observed Mode.",
-              },
-              {
-                title: "Transparency stack",
-                body: "How updates are communicated, measured, and archived for accountability.",
-              },
-            ].map((card) => (
-              <Card key={card.title} className="space-y-3">
-                <h3 className="text-lg font-semibold text-stone-900">
-                  {card.title}
-                </h3>
-                <p className="text-sm leading-6 text-stone-700">{card.body}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-16">
-        <Container>
-          <CTA
-            title="Read the draft documentation first"
-            description="Observed Mode prioritizes clarity and verification. Review the docs to confirm what is current, what is pending, and how updates will be published."
-            primaryLabel="Open Docs"
-            primaryHref="/docs"
-            secondaryLabel="Transparency"
-            secondaryHref="/transparency"
-          />
-        </Container>
-      </section>
+        <section
+          className="rise grid gap-6 md:grid-cols-3"
+          style={{ ["--delay" as string]: "120ms" }}
+        >
+          <Card className="space-y-3">
+            <h3 className="text-lg font-semibold text-stone-900">
+              Documentation-first
+            </h3>
+            <p className="text-sm leading-6 text-stone-700">
+              The public site prioritizes verified references, governance
+              documents, and neutral explanations over promotional or interactive
+              flows.
+            </p>
+          </Card>
+          <Card className="space-y-3">
+            <h3 className="text-lg font-semibold text-stone-900">
+              Maintained and stewarded distinctly
+            </h3>
+            <p className="text-sm leading-6 text-stone-700">
+              Energy Intelligence Coin Emergent Technologies maintains the asset
+              framework, while EIC Foundations carries the public community,
+              documentation, governance, and stewardship posture.
+            </p>
+          </Card>
+          <Card className="space-y-3">
+            <h3 className="text-lg font-semibold text-stone-900">
+              Conservative by design
+            </h3>
+            <p className="text-sm leading-6 text-stone-700">
+              No wallet connection, claims, commerce, investor activation, or
+              token interaction modules are enabled here at this stage.
+            </p>
+          </Card>
+        </section>
+      </Container>
     </div>
   );
 }

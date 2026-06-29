@@ -15,9 +15,13 @@ const sora = Sora({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
 export const metadata: Metadata = {
-  title: "EIC Observed Mode",
-  description: "Draft scaffold for the EIC ecosystem in Observed Mode.",
+  title: "Energy Intelligence Coin (EIC) | EIC Foundations",
+  description:
+    "Official documentation-first site for Energy Intelligence Coin (EIC), a live Base Mainnet asset maintained by Energy Intelligence Coin Emergent Technologies and publicly stewarded through EIC Foundations in Observed Mode.",
+  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
 };
 
 export default function RootLayout({
